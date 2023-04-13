@@ -1,0 +1,5 @@
+# Vehicle-License-Plate-Detection
+
+This project is aiming to build a set of machine learning models to detect and recognize vehicle license plates in images. The first part of this project implements a convolution neural net (CNN) architecture VGG16 using Keras to localize the license plate in an image. The CNN model has been trained using images with labels of bounding boxes around the license plates. The trained model has shown a reasonable level of accuracy in localizing the plates in the testing image set.
+
+The second part of the project is to recognize and output the letters and digits in a plate in order. The plate images generated in the first part are preprocessed using some character segmentation techniques to obtain an individual image of each character. Then the characters are recognized using a CNN classification model. A final test of the end to end pipeline was conducted on 42 new images taken by the group members. On 88% of the 42 images, the model can predict a proper bounding box around the plate. And the model correctly recognized 76.6% of all the characters on the plates.​
